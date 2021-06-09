@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import faker from 'faker';
 import CommentDetail from './CommentDetail'
-
+import ApprovalCard from './ApprovalCard'
 
 
 const App =()=>{
@@ -10,9 +10,23 @@ const App =()=>{
   return(
     <div  className = "ui container comments"> 
       <hr/>
-      <CommentDetail author = 'Sam'/>    
-      <CommentDetail author = 'David'/>  
+      <ApprovalCard>
+        <CommentDetail 
+          author = 'Sam' 
+          image = {faker.image.avatar()} 
+          time = "Today at 4:00pm" 
+          content = 'Very Very Nice Comment'
+        /> 
+      </ApprovalCard>   
+        <CommentDetail 
+          author = 'David' 
+          image = {faker.image.avatar()} 
+          time = "Yesterday at 6:00pm" 
+          content = 'Very Nice Comment'
+        />  
+     
     </div>
+
 
   )
 }
