@@ -10,8 +10,8 @@ const App =()=>{
   return(
     <div  className = "ui container comments"> 
       <hr/>
-      <CommentDetail/>    
-      <CommentDetail/>  
+      <CommentDetail author = 'Sam'/>    
+      <CommentDetail author = 'David'/>  
     </div>
 
   )
