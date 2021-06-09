@@ -18,13 +18,15 @@ const App =()=>{
           content = 'Very Very Nice Comment'
         /> 
       </ApprovalCard>   
+      <ApprovalCard>
         <CommentDetail 
-          author = 'David' 
-          image = {faker.image.avatar()} 
-          time = "Yesterday at 6:00pm" 
-          content = 'Very Nice Comment'
-        />  
-     
+            author = 'David' 
+            image = {faker.image.avatar()} 
+            time = "Yesterday at 6:00pm" 
+            content = 'Very Nice Comment'
+          />  
+      </ApprovalCard> 
+      <hr></hr>  
     </div>
 
 
